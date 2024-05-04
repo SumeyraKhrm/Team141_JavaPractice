@@ -12,7 +12,7 @@ public class C04_Child extends C03_Parent{
         ilk satirda gorunur bir constructor call varsa
         Java o constructor call'a uygun olarak calisir
         Eger ilk satirda GORUNUR bir constructor call yoksa
-        Java default olarak PARAMETRESIZ super() koyar
+        Java default olarak PARAMETRESIZ super() ( constructor call ) koyar
      */
 
     C04_Child(){
