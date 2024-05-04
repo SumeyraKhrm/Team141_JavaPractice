@@ -1,4 +1,25 @@
 package day34_inheritance;
 
-public class C03_Parent {
+public class C03_Parent extends C02_GParent  {
+
+    C03_Parent(){
+        System.out.println("Parent parametresiz cons.");
+    }
+
+    C03_Parent(int b){
+        System.out.println("Parent parametresiz cons.");
+    }
+
+    C03_Parent(String k){
+        this(3);  //bu class da demek
+        System.out.println("Parent String parametreli cons.");
+    }
+
+    C03_Parent(double c){ //super yok
+        super(7.2);
+        c=7;
+        System.out.println(c);
+    }
+
+
 }
