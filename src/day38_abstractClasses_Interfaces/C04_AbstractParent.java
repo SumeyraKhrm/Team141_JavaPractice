@@ -1,4 +1,6 @@
 package day38_abstractClasses_Interfaces;
 
-public class C04_AbstractParent {
+public abstract class C04_AbstractParent extends C03_AbstractGrandParent {
+
+
 }
