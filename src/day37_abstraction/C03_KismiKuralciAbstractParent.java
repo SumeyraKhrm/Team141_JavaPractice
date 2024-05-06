@@ -5,7 +5,7 @@ public abstract class C03_KismiKuralciAbstractParent {
     /*
 
         Bir class isterse, kendisini parent edinecek child class'larin
-        mutlaka implement etmesi gereken method'lari belirleyebilir
+        mutlaka implement etmesi gereken method'lari gitbelirleyebilir
 
         ornegin bu class'imiz kendisinde bulunan method1 ve method2'yi
         C03'u parent edinen tum child class'larin implement etmesini zorunlu kilmak istiyor
