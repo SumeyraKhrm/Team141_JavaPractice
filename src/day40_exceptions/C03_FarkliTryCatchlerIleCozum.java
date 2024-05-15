@@ -1,8 +1,16 @@
 package day40_exceptions;
 
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class C03_FarkliTryCatchlerIleCozum {
+
+    /*
+            Ayri ayri try catch kullandigimizda
+            birinci try-catch'de exception yakalandiginda
+            ikinci bundan haberdar olmuyor
+            bunun cozumu icin ekstra flag kullanilabilir
+         */
 
     public static void main(String[] args) {
 
@@ -16,9 +24,22 @@ public class C03_FarkliTryCatchlerIleCozum {
 
         System.out.println("Lutfen pozitif bir tamsayi giriniz...");
 
-        int index = scanner.nextInt(); // InputMissmatchException
+        int index = 0; // InputMissmatchException
 
-        System.out.println(str.charAt(index)); // StringIndexOutOfBoundsException
+        try {
 
+            index = scanner.nextInt();
+
+        } catch (InputMismatchException e) {
+
+            System.out.println("lütfen pozitif bir tamsayi giriniz..");
+        }
+
+        try {
+            System.out.println(str.charAt(index)); // StringIndexOutOfBoundsException
+
+        } catch (StringIndexOutOfBoundsException e) {
+            System.out.println("girdiginiz index sinirlarin disinda");
+        }
     }
 }
