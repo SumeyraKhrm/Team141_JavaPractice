@@ -2,6 +2,9 @@ package day39_interfaces;
 
 public interface I_interfaceInformations {
 
+    //Interface bir cesit yapilacaklar listesi(to do list)dir.
+    //Inferface constructor a sahip değildir ve obje de oluşturulamaz
+
 
     // Interface ozel yapisindan dolayi icinde bulunan variable ve
     // method’larin tamami aynı yapidadir.
