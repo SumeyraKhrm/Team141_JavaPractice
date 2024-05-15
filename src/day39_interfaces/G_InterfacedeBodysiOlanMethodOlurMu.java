@@ -48,8 +48,4 @@ public interface G_InterfacedeBodysiOlanMethodOlurMu {
         System.out.println("Interface icinde static method");
     }
 
-
-
-
-
 }
