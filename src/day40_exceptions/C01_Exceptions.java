@@ -22,10 +22,9 @@ public class C01_Exceptions {
                 kodun calismasini o satir itibariyle durdurur
                 hatanin bulundugu satiri, hatanin cinsini ve sebebini bize rapor eder
 
-            Iyi bir kod yazarinin
-            exception olusma olasiliklarini iyi tespit edip
-            java'ya tum olasi exception durumlarinda
-            ne yapmasi gerektigini soyler
+
+            Iyi bir kod yazarinin exception olusma olasiliklarini iyi tespit edip
+            java'ya tum olasi exception durumlarinda ne yapmasi gerektigini soyler
          */
 
 
@@ -46,8 +45,6 @@ public class C01_Exceptions {
 
             System.out.println("Sana tamsayi yaz dedik :) ");
             hataVarMi = true;
-
-
         }
 
 

@@ -1,8 +1,12 @@
 package day40_exceptions;
 
+import java.util.InputMismatchException;
+import java.util.Random;
 import java.util.Scanner;
 
 public class C04_TekTry2CatchBlogu {
+
+    //bu da sorunu yazdırıyor ve hakkında detay veriyor yani sorunun kaynagını veriyor
 
     public static void main(String[] args) {
 
@@ -14,10 +18,17 @@ public class C04_TekTry2CatchBlogu {
 
         Scanner scanner = new Scanner(System.in);
 
-        System.out.println("Lutfen pozitif bir tamsayi giriniz...");
 
-        int index = scanner.nextInt(); // InputMissmatchException
+        try {
+            int index = scanner.nextInt(); // InputMissmatchException
 
-        System.out.println(str.charAt(index)); // StringIndexOutOfBoundsException
+            System.out.println(str.charAt(index)); // StringIndexOutOfBoundsException
+
+        } catch (InputMismatchException e) {
+            System.out.println("Pozitif tamsayi girmelisiniz...");
+        } catch (StringIndexOutOfBoundsException e){
+            System.out.println("Girdiginiz sayi metnin sinirlari disinda");
+        }
+
     }
 }
